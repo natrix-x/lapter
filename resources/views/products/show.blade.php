@@ -4,7 +4,7 @@
     <section class="bg-white product-cart-container">
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-lg-9 col-sm-12">
                     <h2 class="left">{{$car->name}}</h2>
 
                     <!-- SLIDER start -->
@@ -127,12 +127,6 @@
                                         <li>Допускают установку колес большего диаметра и расширение колеи</li>
                                         <li>Улучшение внешнего вида внедорожника</li>
                                     </ul>
-                                </div>
-                                @endforeach
-                            </div>
-                            <div class="flex-container">
-                                @foreach($car->products as $product)
-                                <div class="flex-inner">
                                     <div class="pre-order-container">
                                         <span class="pre-order-title">Сделать предзаказ</span>
                                         <div class="pre-order-block flex-center">

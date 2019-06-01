@@ -10,19 +10,19 @@
             <h4>СОЦИАЛЬНЫЕ СЕТИ</h4>
             <div class="flex-center">
                 <a href="#" class="social-link-round">
-                    <img src="img/fb_w.svg" alt="Facebook" />
+                    <img src="/img/fb_w.svg" alt="Facebook" />
                 </a>
                 <a href="#" class="social-link-round">
-                    <img src="img/tw_w.svg" alt="Twitter" />
+                    <img src="/img/tw_w.svg" alt="Twitter" />
                 </a>
                 <a href="#" class="social-link-round">
-                    <img src="img/vk_w.svg" alt="Вконтакте" />
+                    <img src="/img/vk_w.svg" alt="Вконтакте" />
                 </a>
                 <a href="#" class="social-link-round">
-                    <img src="img/ig_w.svg" alt="Instagram" />
+                    <img src="/img/ig_w.svg" alt="Instagram" />
                 </a>
                 <a href="#" class="social-link-round">
-                    <img src="img/yt_w.svg" alt="YouTube" />
+                    <img src="/img/yt_w.svg" alt="YouTube" />
                 </a>
             </div>
         </div>

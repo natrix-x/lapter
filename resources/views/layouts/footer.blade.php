@@ -61,7 +61,7 @@
                 <div class="col-3">
                     <div class="footer-container">
                         <h5>КОНТАКТЫ</h5>
-                        <p>Самарская обл., г. Тольятти, ул. Юбилейная, 1-234</p>
+                        <p>Самарская обл., г. Тольятти, ул.Спортивная 1А, офис 16</p>
                         <p>Телефон: +7 (8482) 506-507, +7 (903) 333-82-51</p>
                         <p>E-mail: lapter163@yandex.ru</p>
                     </div>
@@ -94,11 +94,11 @@
             <!-- MOBILE -->
             <div class="col-sm-12">
                 <div class="flex-center">
-                    <a href="#"><img src="img/fb.svg" alt="facebook"/></a>
-                    <a href="#"><img src="img/tw.svg" alt="twitter"/></a>
-                    <a href="#"><img src="img/vk.svg" alt="vk"/></a>
-                    <a href="#"><img src="img/ig.svg" alt="instagram"/></a>
-                    <a href="#"><img src="img/yt.svg" alt="youtube"/></a>
+                    <a href="#"><img src="/img/fb.svg" alt="facebook"/></a>
+                    <a href="#"><img src="/img/tw.svg" alt="twitter"/></a>
+                    <a href="#"><img src="/img/vk.svg" alt="vk"/></a>
+                    <a href="#"><img src="/img/ig.svg" alt="instagram"/></a>
+                    <a href="#"><img src="/img/yt.svg" alt="youtube"/></a>
                 </div>
             </div>
 

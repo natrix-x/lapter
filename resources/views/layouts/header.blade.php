@@ -6,7 +6,9 @@
             <div class="mob-logo">
                 <div id="mob-menu-btn" class="burger"></div>
                 <div id="mob-menu-close-btn" class="burger"></div>
-                <img src="img/lapter.svg" alt="Lapter" />
+                <a class="mob-logo" href="/">
+                    <img src="/img/lapter.svg" alt="Lapter" />
+                </a>
                 <div class="mob-cart">
                     <div class="mob-img">
                         <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +46,7 @@
                 <div class="row">
                     <div class="col-6"></div>
                     <div class="col-4">
-                        <span class="address">Самарская обл., г.Тольятти, Приморский б-р 8</span>
+                        <span class="address">Самарская обл., г.Тольятти, ул.Спортивная 1А, офис 16</span>
                     </div>
                     <div class="col-2">
                         <div class="socials">
@@ -107,8 +109,8 @@
                 <div class="col-2">
 
                     <div class="auth">
-                        <a href="#" class="login">ВХОД</a>
-                        <a href="#" class="reg">РЕГИСТРАЦИЯ</a>
+                        <a href="/login" class="login">ВХОД</a>
+                        <a href="/register" class="reg">РЕГИСТРАЦИЯ</a>
                     </div>
 
                 </div>

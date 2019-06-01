@@ -20,3 +20,13 @@ Route::get('/delivery', 'SiteController@delivery');
 Route::get('/blog', 'BlogController@index');
 Route::get('/products', 'ProductController@index');
 Route::get('/products/{product}', 'ProductController@show');
+
+Route::get('/login', function (){
+    return view('auth.login');
+});
+Route::get('/register', function (){
+    return view('auth.register');
+});
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::post('/login', 'Auth\LoginController@login')->name('login');
+Route::post('/register', 'Auth\RegisterController@login')->name('register');

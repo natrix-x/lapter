@@ -105,7 +105,6 @@ a {
 	justify-content: center;
 }
 .flex-container {
-	/*padding: 40px 0 0;*/
 	display: flex;
 	justify-content: space-between;
 }
@@ -1587,6 +1586,83 @@ table.packing tr td {
 }
 
 
+/* REGISTRATION */
+.form-container {
+	margin: 30px 0 10px;
+	padding: 20px;
+	box-shadow: 0 0 8px rgba(0,0,0,.25);
+	border-top: 4px solid #000;
+}
+.checkbox-container {
+	margin-left: 20px;
+	padding: 8px 0;
+}
+.forget {
+	display: block;
+	padding: 8px 0;
+	color: #63bb40;
+}
+
+/* CART */
+
+.cart {
+	width: 100%;
+	border-spacing: 0;
+}
+.cart tr th {
+	padding: 10px;
+	border-bottom: 3px solid #000;
+	text-align: left;
+	text-transform: uppercase;
+}
+.cart tr td {
+	padding: 20px 10px;
+	text-align: left;
+	text-transform: uppercase;
+	border-bottom: 1px solid #dbdbdb;
+}
+.cart tr th:last-child,
+.cart tr td:last-child {
+	text-align: right;
+}
+
+.cart tr td span,
+.cart tr td img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.cart tr td span {
+	margin-left: 10px;
+}
+.counter {
+	width: fit-content;
+	border: 1px solid #dbdbdb;
+}
+.counter input {
+	padding: 5px;
+	border:none;
+	text-align: center;
+}
+.counter-btn {
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	text-align: center;
+	background-color: #c2c2c2;
+	color: #fff;
+	cursor: pointer;
+	user-select: none;
+}
+
+form#table-counter input[type=submit] {
+	margin-top: 30px;
+	margin-right: 0;
+	margin-left: auto;
+	text-transform: uppercase;
+}
+
+
+
 
 /*=====================
 ======== MOBILE =======
@@ -1603,7 +1679,7 @@ table.packing tr td {
 }
 .mob-logo {
 	position: relative;
-	padding: 10px 0;
+	padding: 5px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;

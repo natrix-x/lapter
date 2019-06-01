@@ -29,14 +29,15 @@
     .nav,
     .footer,
     .sticky-wrapper,
-    .bottom .flex-container {
+    .bottom .flex-container,
+    .products-nav {
         display: none;
     }
     .adv-container {
         padding: 15px 30px;
     }
     .promo {
-        margin: -30px 0 -34px;
+        margin: 35px 0 -34px;
     }
     .bottom .flex-center {
         margin-bottom: 30px;
@@ -104,9 +105,26 @@
 }
 
 @media screen and (max-width: 455px) {
-
-
+    .product-cart-container {
+        padding-top: 65px;
+    }
+    .products-flex {
+        flex-wrap: wrap;
+    }
+    .flex-inner {
+        width: 100%;
+    }
+    .flex-inner:first-child {
+        margin-right: 0;
+    }
     .i-mini-pic {
         display: none;
+    }
+    .pre-order-block {
+        width: 100%;
+    }
+    .pre-order-price {
+        margin-top: 7px;
+        font-size: 22px;
     }
 }
