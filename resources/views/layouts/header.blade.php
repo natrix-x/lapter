@@ -46,7 +46,7 @@
                 <div class="row">
                     <div class="col-6"></div>
                     <div class="col-4">
-                        <span class="address">Самарская обл., г.Тольятти, ул.Спортивная 1А, офис 16</span>
+                        <span class="address">Самарская обл., г.Тольятти, Приморский б-р, д.8</span>
                     </div>
                     <div class="col-2">
                         <div class="socials">
@@ -108,11 +108,38 @@
                 </div>
                 <div class="col-2">
 
-                    <div class="auth">
-                        <a href="/login" class="login">ВХОД</a>
-                        <a href="/register" class="reg">РЕГИСТРАЦИЯ</a>
-                    </div>
 
+
+                    @guest
+                        <div class="auth">
+                            <a href="{{ route('login') }}" class="login">ВХОД</a>
+                            @if(Route::has('register'))
+                                <a href="{{ route('register') }}" class="reg">РЕГИСТРАЦИЯ</a>
+                            @endif
+                        </div>
+                    @else
+                        <div class="auth-user">
+                            <div class="user-btn">
+                                <div class="user-name-block">
+                                    <span>{{ Auth::user()->name }}</span>
+                                </div>
+                                <div class="user-arrow-block"></div>
+
+                                <ul class="user-menu">
+                                    <li>
+                                        <a href="{{ route('home') }}" class="lc">Личный кабинет</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('logout') }}" class="logout" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Выход</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </div>
+                    @endguest
                 </div>
             </div>
         </div>

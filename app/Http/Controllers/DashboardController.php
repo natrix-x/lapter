@@ -1,14 +1,14 @@
 <?php
 
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
 
 class DashboardController
 {
     public function index()
     {
-        return view('dashboard');
+        return view('dashboard.index');
     }
 
 }

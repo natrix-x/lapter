@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Str;
 
 class User extends Authenticatable
 {
@@ -15,9 +16,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -36,4 +35,29 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function isConfirmed()
+    {
+        return !! $this->is_confirmed;
+    }
+
+    public function getEmailConfirmationToken()
+    {
+        $this->update([
+            'confirmation_token' => $token = Str::random(),
+        ]);
+
+        return $token;
+    }
+
+    public function confirm()
+    {
+        $this->update([
+            'is_confirmed' => true,
+            'confirmation_token' => null,
+        ]);
+
+        return $this;
+    }
+
 }

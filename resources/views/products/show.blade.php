@@ -180,8 +180,8 @@
                                         <ul class="style-check-ellipse">
                                             <li>На кузов {{$product->applied_for}}</li>
                                             <li>Выступание за габариты кузова:<br>
-                                                - передняя арка ~ 80 мм<br>
-                                                - задняя арка ~ 80 мм</li>
+                                                - передняя арка ~ {{$product->width_front}} мм<br>
+                                                - задняя арка ~ {{$product->width_rear}} мм</li>
                                             <li>Материал LLDPE* (Эластон**)</li>
                                         </ul>
                                         <div class="pre-order-container">
